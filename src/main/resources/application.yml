@@ -1,0 +1,18 @@
+server:
+  # PORT 설정
+  # http://localhost
+  port: 80
+ 
+spring:
+  # JPA 설정
+  jpa:
+    properties:
+      hibernate:
+        # Dialect 설정
+        dialect: org.hibernate.dialect.H2Dialect
+        # Hibernate가 실행하는 모든 SQL를 Console에 출력한다.
+        show_sql: true
+        # Console에 출력되는 JPA 실행 Query를 가독성 있게 표현한다.
+        format_sql: true
+        # Debugging이 쉽도록 SQL 이외 추가적인 정보를 출력한다.
+        use_sql_comments: true
